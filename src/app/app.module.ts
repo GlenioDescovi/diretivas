@@ -1,14 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { DiretivasNgIfComponent } from './diretivas-ng-if/diretivas-ng-if.component';
+import { TesteComponent } from './teste/teste.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DiretivasNgIfComponent,
+    TesteComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
